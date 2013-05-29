@@ -1,0 +1,29 @@
+<html>
+
+	<title>processing.js sketch</title>
+	<head>
+	<link rel="stylesheet" href="style.css" />
+		<script src="processing.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		// convenience function to get the id attribute of generated sketch html element
+		function getProcessingSketchId () { return 'basicSketch'; }
+		</script>
+
+	</head>
+
+	<body>
+		<div id="content">
+			<div>
+				<canvas id="basicSketch" data-processing-sources="basicSketch.pde" 
+						width="300" height="300">
+					<p>Your browser does not support the canvas tag.</p>
+					<!-- Note: you can put any alternative content here. -->
+				</canvas>
+				<noscript>
+					<p>JavaScript is required to view the contents of this page.</p>
+				</noscript>
+	    	</div>
+		</div>
+	</body>
+
+</html>

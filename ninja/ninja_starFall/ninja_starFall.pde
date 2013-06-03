@@ -125,8 +125,8 @@ void keyPressed() {
 
 void updateBounds() {
   
-  int halfW = ninja.width/2.0;
-  int halfH = ninja.height/2.0;
+  int halfW = int(ninja.width/2.0);
+  int halfH = int(ninja.height/2.0);
   
   if ( x < -halfW) {
     x = width + halfW;
@@ -157,7 +157,6 @@ void updateBalls() {
   for ( int i = 0; i < balls.size(); i++) {
       PVector b = (PVector)balls.get(i);
       b.y += 2;
-      balls.set(i, b);
   }
 }
 

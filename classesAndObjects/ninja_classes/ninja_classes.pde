@@ -116,8 +116,6 @@ void updateStars() {
 
     myStar.update();
 
-    stars.set(i, myStar);
-
     if (myStar.pos.y > height+starRad) {
       stars.remove(i);
     } else if ( checkCollision( myStar.pos, ninja.pos, starRad+ninja.w*.5, i) ) {

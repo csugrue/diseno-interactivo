@@ -25,7 +25,6 @@ void draw(){
   for( int i = 0; i < bullets.size(); i++){
     Bullet myBullet = (Bullet)bullets.get(i);
     myBullet.update();
-    bullets.set(i,myBullet);
     
     myBullet.display( fireBall );
     

@@ -11,7 +11,6 @@ void draw(){
   for(int i = 0; i < balls.size(); i++){
     PVector b = (PVector)balls.get(i);
     b.y++;
-    balls.set(i,b);
     
     ellipse(b.x,b.y,20,20);
     

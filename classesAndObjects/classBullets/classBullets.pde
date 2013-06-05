@@ -29,7 +29,8 @@ void draw(){
     myBullet.display( fireBall );
     
     float d = dist(pelota.x,pelota.y,myBullet.x,myBullet.y);
-    if( d < (pelota.radius+1) ){
+    
+    if( d < (pelota.radius+10) ){
       pelota.reset();
       bullets.remove(i);
     }else if( myBullet.x > width ){
